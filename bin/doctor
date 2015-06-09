@@ -74,6 +74,10 @@ var doctor = new (prime({
 			? path.resolve(process.cwd(), options.less)
 			: path.resolve(this.builder.basePath, this.builder.options.less);
 
+		this.builder.css = options.css
+			? path.resolve(cwd, options.css)
+			: path.resolve(this.builder.basePath, this.builder.options.css);
+
 		this.getData(options.source, function(body){
 			self.getPartials(body, function(body){
 				self.builder.buildDocs(body);

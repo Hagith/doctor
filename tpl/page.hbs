@@ -4,6 +4,7 @@
 	<meta charset="utf-8"/>
 	<title>{{title}}</title>
 	<link href="css/doctor.css" type="text/css" rel="stylesheet"/>
+	<link href="css/print.css" type="text/css" rel="stylesheet" media="print"/>
 	{{#if analytics}}
 		<!-- Google Analytics -->
 		<script type="text/javascript">
@@ -23,6 +24,7 @@
 <a id="github-ribbon" href="{{github}}"><img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 {{/if}}
 <div id="nav">
+    <h1 class="visible-print">{{title}}</h1>
 	<div class="separator"></div>
 	<a title="{{title}}" class="brand" href="#" style="background-image:url({{logo}})"></a>
 	<div class="separator"></div>
